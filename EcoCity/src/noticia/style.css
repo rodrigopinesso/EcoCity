@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+header {
+    padding: 25px;
+    background-color: #004651;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.more{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    gap: 100px;
+}
+.more h4 {
+    gap: 30px;
+}
+
+.div-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.div-header h1{
+    padding-top: 17px;
+    margin-left:10px;
+}
+
+header img {
+    width: 50px;
+}
+main{
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+footer {
+    background-color: #004651;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.title-h1{
+    padding-bottom: 10px;
+}
+.title hr{
+    width: 10ch;
+    border: 4px solid black;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+}
+.section-noticia{
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    width: 100ch;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 30px;
+    text-align: justify;
+}
+
+li {
+    width: 70ch;
+    height: 80ch;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 30px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+li h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+.saibaMais{
+    width: 50ch;
+    height: 30px;
+    padding: 5px;
+    font-size: 18px;
+    margin: 0 auto;
+    background-color: #004651;
+    color: white;
+    border-radius: 10px;
+}
+li p {
+    padding-top: 20px;
+    width: 60ch;
+    height: 8ch;
+    margin: 0 auto;
+}
+li img {
+    height: 30ch;
+    width: 60ch;
+    margin: 0 auto;
+    border-radius: 10px;
+}   
+
+li .conteudo{
+    margin-left: 20px;
+}
+
+.noticia-li{
+
+}
+svg {
+    margin-left: 30px;
+}
+.icons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+dialog {
+    padding: 15px;
+    width: 50ch;
+    margin: auto;
+}
+dialog h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+dialog div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+dialog button {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+
+    width: 130px;
+    height: 30px;
+    align-items: center;
+    background-color: #004651;
+    color: white;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+
+
+}
+dialog button:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    font-size: 20px;
+}
+dialog input {
+    padding-left: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+form label {
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.div-addimg{
+    display: flex;
+    flex-direction: row;
+}
+.div-addimg input {
+    width: 300px;
+    cursor: pointer;
+}
+#add-dialog {
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(7, 44, 87);
+    color: white;
+}
+#add-dialog:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    font-size: 25px;
+    background-color: #004651;
+    color: white;
+}

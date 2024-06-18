@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding: 25px;
+    background-color: #004651;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.more{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    gap: 100px;
+}
+.more h4 {
+    gap: 30px;
+}
+
+.div-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.div-header h1{
+    padding-top: 17px;
+    margin-left:10px;
+}
+
+header img {
+    width: 50px;
+}
+main{
+    padding: 30px;
+}
+.section-apresentacao{
+    display: flex;
+    justify-content: center;
+}
+
+.img-apr {
+    width: 200ch;
+    height: 90ch;
+}
+
+.section-tops{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    width: 150ch;
+    margin: 0 auto;
+}
+
+.section-tops img {
+    width: 40ch;
+}
+
+.topOne{
+    border: 2px solid black
+}
+.topTwo{
+    border: 2px solid black
+
+}
+.topThree{
+    border: 2px solid black
+
+}
+footer {
+    background-color: #004651;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    
+}
+  
+.abousUs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-tops .top:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.5s ease;
+}
+
+.section-tops:hover > .top:not(:hover){
+    filter: blur(10px);
+    transform: scale(0.8, 0.8);
+    transition: 0.5s ease;
+
+}
+
+.top figcaption{
+    position: relative;
+    bottom: 30px;
+    color: white;
+    font-size: 25px;
+    padding: 7px;
+    text-align: center;
+    font-weight: 500;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 42%,rgba(0,0,0,0.66) 44%,rgba(0,0,0,0.8) 76%,rgba(0,0,0,0.8) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        
+}
+
+#openInputLogin{
+    cursor: pointer;
+}
+
+dialog{
+    margin: auto;
+}
+
+.login-card {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+    box-shadow: 2px 2px 10px #ccc;
+  }
+  
+  .card-header {
+    text-align: center;
+    margin-bottom: 20px
+  }
+  
+  .card-header .log {
+    margin: 0;
+    font-size: 24px;
+    color: black;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ccc;
+    color: black;
+  }
