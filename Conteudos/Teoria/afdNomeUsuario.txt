@@ -1,0 +1,43 @@
+Validação de Nome de Usuário:
+
+Regras para Nome de Usuário:
+Deve começar com uma letra (maiúscula ou minúscula).
+Pode conter letras, números, pontos (.) e underscores (_).
+Deve ter entre 3 e 12 caracteres.
+AFD para Nome de Usuário
+
+Estados:
+
+q0: Estado inicial.
+q1: Estado após a primeira letra.
+q2: Estado para letras, números, pontos e underscores subsequentes.
+q3: Estado de aceitação (nome de usuário válido).
+
+Transições:
+
+q0 → q1: Se o caractere for uma letra (a-z, A-Z).
+q1 → q2: Se o caractere for uma letra (a-z, A-Z), número (0-9), ponto (.) ou underscore (_).
+q2 → q2: Se o caractere for uma letra (a-z, A-Z), número (0-9), ponto (.) ou underscore (_).
+q2 → q3: Se o comprimento do nome de usuário estiver entre 3 e 12 caracteres.
+
+Diagrama: 
+
+q0 --[a-z, A-Z]--> q1 --[a-z, A-Z, 0-9, ., _]--> q2 --[a-z, A-Z, 0-9, ., _]--> q2
+                                       |                      |
+                                       +------[length 3-12]---+
+
+
+Gramática Regular para Nome de Usuário
+Produções:
+
+S → L X
+L → a | b | c | ... | z | A | B | C | ... | Z
+X → L | N | . | _ | L X | N X | . X | _ X
+N → 0 | 1 | 2 | ... | 9
+
+Formal: 
+
+E= {S0, S1, S2 S3}
+I= S0
+F= {S3}
+Σ= {a-z, A-Z, 0-9, ., _}

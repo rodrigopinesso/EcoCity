@@ -1,0 +1,26 @@
+Métricas de tempo:
+
+- Deve ser carregada em até 5 segundos, com uma conexão estável. 
+- Tempo de resposta do servidor deve demorar no máximo 1 segundo.
+- Tempo de Carregamento de Páginas Internas (perfil do usuário, feed de notícias, etc.) deve ter o mesmo tempo da página principal.
+
+Métricas financeiras:
+
+- Custo incial não deve passar de 25 milhões de dólares.
+- Terminar o primeiro ano com lucro de 50% acima do gasto.
+- Fechar contratos com patrocinadoras sustentáveis.
+
+Métricas de manutenção:
+
+- Custo baixo para resolução de bugs.
+- Ter um tempo de resolução de até 8 horas, focando em manter abaixo desse número.
+
+Métricas de crescimento:
+
+- Ter um número inicial de usuários maior que 100,000.
+- Crescer 110% a cada dia.
+
+Métricas de engajamento e uso:
+
+- Medir número de participações diárias.
+- Encorajar usuários a fazerem mais posts a cada dia.

@@ -1,0 +1,43 @@
+Escolhemos Grafo pois:
+O uso de grafos em redes sociais é uma abordagem poderosa para analisar e compreender as relações e interações entre indivíduos ou entidades dentro dessas redes.
+
+Usos na Rede Social
+Representar a rede de conexões entre usuários (amizades, seguidores).
+Implementar funcionalidades como sugestões de amigos, detecção de comunidades e análise de rede.
+
+1. Representação de Relações
+Nós (vértices): Representam os indivíduos ou entidades na rede social.
+Arestas (ligações): Representam as conexões ou interações entre os nós, que podem ser uni ou bidirecionais.
+
+2. Métricas de Grafos
+Grau do nó: Número de arestas conectadas a um nó. Indica a popularidade ou influência de um indivíduo.
+Centralidade: Mede a importância de um nó dentro da rede. Existem várias formas de centralidade, como:
+Centralidade de grau: Baseada no número de conexões.
+Centralidade de intermediação: Mede quantas vezes um nó aparece nos caminhos mais curtos entre outros nós.
+Centralidade de proximidade: Mede quão perto um nó está de todos os outros nós na rede.
+Centralidade de autovetor: Mede a influência de um nó baseado na importância dos nós aos quais está conectado.
+
+3. Comunidades e Agrupamentos
+Detecção de comunidades: Algoritmos como Louvain, Girvan-Newman e Infomap são usados para identificar grupos de nós mais densamente conectados entre si do que com o restante da rede.
+Modularidade: Métrica que avalia a força da divisão de uma rede em comunidades.
+
+4. Visualização de Redes Sociais
+Ferramentas como Gephi, Cytoscape e Graph-tool ajudam a visualizar e explorar a estrutura de grafos de redes sociais, permitindo a identificação visual de padrões e comunidades.
+
+5. Análise de Difusão
+Modelos de propagação: Estudam como informações, comportamentos ou doenças se espalham pela rede, como o modelo de contágio simples ou o modelo SIR (Susceptible-Infectious-Recovered).
+
+6. Aplicações Práticas
+Marketing e Publicidade: Identificação de influenciadores e propagação de campanhas publicitárias.
+Segurança e Detecção de Fraudes: Identificação de comportamentos suspeitos e redes de fraude.
+Recomendações de Amigos/Conteúdo: Usando grafos para sugerir conexões ou conteúdo relevante aos usuários.
+
+Exemplos Práticos:
+Identificação de Influenciadores:
+Usando centralidade de autovetor para encontrar indivíduos influentes que podem ajudar a promover um produto ou ideia.
+
+Detecção de Comunidades:
+Aplicar o algoritmo de Louvain para descobrir grupos de amigos ou interesses comuns dentro de uma rede social.
+
+Análise de Conectividade:
+Avaliar a resiliência de uma rede social determinando a robustez estrutural e a existência de nós ou arestas críticas cuja remoção poderia fragmentar a rede.

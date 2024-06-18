@@ -1,0 +1,56 @@
+Validação de Senha:
+
+Regras para Senha:
+Deve ter entre 8 e 16 caracteres.
+Deve conter pelo menos uma letra maiúscula.
+Deve conter pelo menos uma letra minúscula.
+Deve conter pelo menos um número.
+Deve conter pelo menos um caractere especial (como @, #, $, etc.).
+
+AFD para Senha
+
+Estados:
+
+p0: Estado inicial.
+p1: Estado após encontrar uma letra minúscula.
+p2: Estado após encontrar uma letra maiúscula.
+p3: Estado após encontrar um número.
+p4: Estado após encontrar um caractere especial.
+p5: Estado de aceitação (senha válida).
+
+Transições:
+
+p0 → p1: Se o caractere for uma letra minúscula (a-z).
+p0 → p2: Se o caractere for uma letra maiúscula (A-Z).
+p0 → p3: Se o caractere for um número (0-9).
+p0 → p4: Se o caractere for um caractere especial (@, #, $, etc.).
+p1, p2, p3, p4 → p5: Se o comprimento da senha estiver entre 8 e 16 caracteres e todas as condições (uma letra maiúscula, uma letra minúscula, um número, um caractere especial) forem satisfeitas.
+
+Diagrama:
+
+p0 --[a-z]--> p1
+  |--[A-Z]--> p2
+  |--[0-9]--> p3
+  |--[@,#,$,...]--> p4
+
+p1 --[A-Z,0-9,@,#,$,...]--> p5 
+p2 --[a-z,0-9,@,#,$,...]--> p5 
+p3 --[a-z,A-Z,@,#,$,...]--> p5 
+p4 --[a-z,A-Z,0-9]--> p5 
+
+Gramática Regular para Senha
+Produções:
+
+S → M N X Y Z
+M → a | b | c | ... | z
+N → A | B | C | ... | Z
+X → 0 | 1 | 2 | ... | 9
+Y → @ | # | $ | ... (outros caracteres especiais)
+Z → A | B | C (qualquer combinação de letras, números e caracteres especiais, com comprimento entre 8 e 16)
+
+Formal:
+
+E= {S0, S1, S2, S3, S4, S5}
+I= S0
+F= {S5}
+Σ= {a-z, A-Z, 0-9, @, #, $, ...}
